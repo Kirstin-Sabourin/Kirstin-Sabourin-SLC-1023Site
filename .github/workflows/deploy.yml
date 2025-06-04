@@ -1,0 +1,20 @@
+name: Deploy Website
+
+on:
+  push:
+    branches:
+      - master  # Trigger deployment on push to the master branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Check out the code from the repo
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # Target branch for GitHub Pages deployment
+          folder: .         # Folder to deploy (repository root)
