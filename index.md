@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Text can be Kirstin Sabourin 4519066 **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
 
